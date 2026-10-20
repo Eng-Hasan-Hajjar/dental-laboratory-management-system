@@ -1,0 +1,11 @@
+@extends('layouts.app')
+@section('title','الطلبات المخبرية')
+@section('subtitle','متابعة جميع الحالات من التسجيل حتى التسليم.')
+@section('actions')
+@if(in_array(auth()->user()->role,['admin','manager','receptionist']))
+<a class="btn btn-primary" href="{{ route('orders.create') }}">＋ طلب جديد</a>
+@endif
+@endsection
+
+@section('content')<div class="panel"><div class="toolbar"><form method="GET"><input name="q" value="{{ request('q') }}" placeholder="رقم الطلب، الطبيب، المريض" style="min-width:230px"><select name="status"><option value="">كل الحالات</option>@foreach(\App\Models\LabOrder::STATUSES as $key=>$label)<option value="{{ $key }}" @selected(request('status')===$key)>{{ $label }}</option>@endforeach</select><label class="checkrow" style="margin:0"><input type="checkbox" name="late" value="1" @checked(request('late')=='1')> المتأخرة فقط</label><button class="btn btn-secondary">فلترة</button>
+<a class="btn btn-ghost" href="{{ route('orders.index') }}">مسح</a></form><span class="tag soft">{{ $orders->total() }} طلب</span></div><div class="table-wrap"><table><thead><tr><th>رقم الطلب</th><th>الطبيب</th><th>المريض</th><th>العمل</th><th>الأولوية</th><th>موعد التسليم</th><th>الحالة</th><th></th></tr></thead><tbody>@forelse($orders as $o)<tr><td class="mono"><a href="{{ route('orders.show',$o) }}">{{ $o->order_no }}</a></td><td>{{ $o->doctor->name }}</td><td>{{ $o->patient->name }}</td><td>{{ $o->workType->name }}</td><td><span class="tag {{ $o->priority==='urgent'?'red':($o->priority==='high'?'amber':'soft') }}">{{ ['normal'=>'عادية','high'=>'مرتفعة','urgent'=>'عاجلة'][$o->priority]??$o->priority }}</span></td><td><span class="{{ $o->is_late?'tag red':'' }}">{{ $o->due_at->format('Y-m-d') }}</span></td><td><span class="tag {{ $o->is_late?'red':'blue' }}">{{ $o->status_label }}</span></td><td><a class="link-action" href="{{ route('orders.show',$o) }}">فتح ←</a></td></tr>@empty<tr><td colspan="8" class="empty">لا توجد طلبات تطابق المرشحات.</td></tr>@endforelse</tbody></table></div><div class="pagination">{{ $orders->links() }}</div></div>@endsection

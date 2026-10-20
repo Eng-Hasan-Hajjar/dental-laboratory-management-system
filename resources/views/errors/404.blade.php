@@ -1,0 +1,1 @@
+<!doctype html><html lang="ar" dir="rtl"><meta charset="utf-8"><title>غير موجود</title><body style="font-family:Tahoma;text-align:center;padding:10vh 25px;background:#f5f8fa"><h1 style="font-size:70px;color:#009f8e">404</h1><h2>الصفحة المطلوبة غير موجودة</h2><a href="{{ route('dashboard') }}">العودة إلى لوحة التحكم</a></body></html>

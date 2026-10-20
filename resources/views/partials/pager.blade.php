@@ -1,0 +1,1 @@
+@if($paginator->hasPages())<div class="pagination">{{ $paginator->links() }}</div>@endif
