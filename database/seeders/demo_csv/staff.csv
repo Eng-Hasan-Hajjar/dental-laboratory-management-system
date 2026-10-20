@@ -1,0 +1,21 @@
+﻿ref,name,email,role,is_active
+STF-001,عمر العباس,staff-001@example.test,manager,1
+STF-002,زياد الحسين,staff-002@example.test,manager,1
+STF-003,حسن حسن,staff-003@example.test,accountant,1
+STF-004,نور الشامي,staff-004@example.test,accountant,1
+STF-005,أمير الحلاق,staff-005@example.test,receptionist,1
+STF-006,سعيد منصور,staff-006@example.test,receptionist,1
+STF-007,عبد الرحمن سالم,staff-007@example.test,technician,1
+STF-008,فاطمة جبور,staff-008@example.test,technician,1
+STF-009,يوسف العلي,staff-009@example.test,technician,1
+STF-010,عبد الله الدرويش,staff-010@example.test,technician,1
+STF-011,أحمد الأحمد,staff-011@example.test,technician,1
+STF-012,لمى عيسى,staff-012@example.test,technician,1
+STF-013,زياد مصطفى,staff-013@example.test,technician,1
+STF-014,حسن يوسف,staff-014@example.test,technician,1
+STF-015,حسام عبود,staff-015@example.test,technician,1
+STF-016,مرح رمضان,staff-016@example.test,technician,1
+STF-017,سعيد شاهين,staff-017@example.test,technician,1
+STF-018,عبد الرحمن الخطيب,staff-018@example.test,technician,1
+STF-019,منذر الصالح,staff-019@example.test,technician,1
+STF-020,ريم النجار,staff-020@example.test,technician,1

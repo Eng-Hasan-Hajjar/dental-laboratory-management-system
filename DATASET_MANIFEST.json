@@ -1,0 +1,35 @@
+{
+  "dataset": "Dental laboratory synthetic demonstration dataset",
+  "dataset_date": "2026-10-20",
+  "repository": "https://github.com/Eng-Hasan-Hajjar/dental-laboratory-management-system",
+  "note": "Entirely synthetic fictional records; no real patient or doctor data",
+  "counts": {
+    "staff": 20,
+    "doctors": 100,
+    "patients": 1200,
+    "work_types": 28,
+    "lab_orders": 3500,
+    "invoices": 3500,
+    "payments": 4644,
+    "order_stage_histories": 19587
+  },
+  "excel_files": [
+    "01_الأطباء_المرضى_والفريق.xlsx",
+    "02_الطلبات_المخبرية.xlsx",
+    "03_الفواتير.xlsx",
+    "04_المدفوعات.xlsx",
+    "05_مراحل_التنفيذ_الجزء_1.xlsx",
+    "06_مراحل_التنفيذ_الجزء_2.xlsx",
+    "07_مراحل_التنفيذ_الجزء_3.xlsx",
+    "08_مراحل_التنفيذ_الجزء_4.xlsx"
+  ],
+  "import_command": "php artisan db:seed --class=LargeDemoSeeder",
+  "checks": [
+    "All foreign references resolve",
+    "Invoice total = subtotal - discount + tax",
+    "Payments per invoice <= invoice total",
+    "Valid order statuses and allowed stage transitions",
+    "Stage timestamps in per-order chronological order",
+    "Synthetic reserved email addresses"
+  ]
+}

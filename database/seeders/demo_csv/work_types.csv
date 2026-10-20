@@ -1,0 +1,29 @@
+﻿ref,name,description,default_price,estimated_days,is_active
+WT-001,تاج زيركون,Zircon crown,100.00,5,1
+WT-002,جسر أسنان,Dental bridge,250.00,7,1
+WT-003,طقم أسنان كامل,Complete denture,400.00,10,1
+WT-004,قشرة تجميلية,Veneer,120.00,6,1
+WT-005,تقويم متحرك,Removable orthodontic appliance,180.00,8,1
+WT-006,ترميم مؤقت,Temporary restoration,55.00,3,1
+WT-007,تاج ليثيوم ديسيليكات,Lithium disilicate crown,145.00,6,1
+WT-008,تاج PFM,Porcelain-fused-to-metal crown,85.00,5,1
+WT-009,جسر زيركون ثلاثي,Three-unit zirconia bridge,295.00,8,1
+WT-010,جسر PFM رباعي,Four-unit PFM bridge,310.00,9,1
+WT-011,قشرة E.max,E.max laminate veneer,165.00,7,1
+WT-012,إنلاي خزفي,Ceramic inlay,105.00,5,1
+WT-013,أونلاي خزفي,Ceramic onlay,115.00,6,1
+WT-014,ترميم مؤقت PMMA,PMMA temporary crown,42.00,3,1
+WT-015,طقم أسنان جزئي أكريلي,Acrylic partial denture,220.00,9,1
+WT-016,طقم أسنان جزئي مرن,Flexible partial denture,245.00,10,1
+WT-017,هيكل معدني جزئي,Cast-metal partial framework,275.00,9,1
+WT-018,قاعدة طقم مع ضبط إطباق,Denture base with occlusion rim,78.00,4,1
+WT-019,تركيب على زرعة,Implant-supported restoration,220.00,9,1
+WT-020,دعامة زرعة مخصصة,Custom implant abutment,155.00,8,1
+WT-021,واقي أسنان ليلي,Night guard,65.00,4,1
+WT-022,واقي أسنان رياضي,Sports mouthguard,55.00,3,1
+WT-023,جهاز تثبيت بعد التقويم,Orthodontic retainer,75.00,4,1
+WT-024,جهاز تقويم شفّاف,Clear aligner set,280.00,10,1
+WT-025,قالب جراحي للزرعات,Surgical guide,180.00,6,1
+WT-026,نموذج مطبوع ثلاثي الأبعاد,3D-printed dental model,32.00,2,1
+WT-027,إصلاح كسر طقم,Denture repair,35.00,2,1
+WT-028,تبطين طقم الأسنان,Denture reline,70.00,4,1
